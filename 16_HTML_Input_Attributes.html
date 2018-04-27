@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Form Input Attributes</title>
+	<style>
+	   div{
+	   	background-color: blue;
+	   	color: white;
+	   	padding: 10px;
+	   	width: 400px;
+	   	font-family: "Commic Sans MS", sans-serif;
+	   	border-radius: 10px;
+	   	margin: 5px;
+	   }
+	</style>
+</head>
+<body>
+	<!--input attribute value-->
+	 <h2>HTML Form input Attributes</h2>
+    
+
+    <!--input attributes required-->
+
+	<div>
+		<form>
+			<label>UserName</label>
+			<input type="text" value="raj" >
+		</form>
+	</div>
+
+	<!--Readonly-->
+	<div>
+		<form>
+			<label>UserName</label>
+			<input type="text" value="raj" readonly>
+		</form>
+	</div>
+
+	<!--Disabled-->
+	<div>
+		<form>
+			<label>UserName</label>
+			<input type="text" value="raj" disabled>
+		</form>
+	</div>
+
+	<!--Size-->
+	<div>
+		<form>
+			<label>UserName</label>
+			<input type="text" size="25">
+		</form>
+	</div>
+
+	<!--rows ,cols-->
+	<div>
+		<form>
+			<label>Your Message</label>
+			<textarea rows="5" cols="30"></textarea>
+		</form>
+	</div>
+
+
+	<!--HTML 5 Form Attributes-->
+	<h3>HTML 5 Form Attributes</h3>
+
+	<!--required-->
+	<div>
+		<form>
+			<label>UserName *</label>
+			<input type="text" required>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<!--novalidate-->
+	<div>
+		<form novalidate>
+			<label>Enter an Email</label>
+			<input type="email">
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<!--Autofocus-->
+	<div>
+		<form>
+			<label>UserName</label>
+			<input type="text" autofocus>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<!--Pattern-->
+	<div>
+		<form>
+			<label>Twitter User Namae</label>
+			<input type="text" pattern="^[A-Za-z0-9_]{1,15}$">
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<!--placeHolder-->
+	<div>
+		<form>
+			<input type="text" placeholder="Enter  User Name">
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+
+
+
+
+</body>
+</html>

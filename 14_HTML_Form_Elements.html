@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML FORM Input</title>
+	<style>
+		div{
+			background-color: orange;
+			font-family: "Commic Sans MS",sans-serif;
+			padding: 10px;
+			margin: 5px;
+			width: 400px;
+		}
+	</style>
+</head>
+<body>
+
+	<!--input and label-->
+	<div>
+		<label for="username">UserName</label>
+		<input type="text" id="username">
+		<br>
+		<label for="password">Password</label>
+		<input type="password" id="password">
+		<br>
+		<input type="submit" value="Submit">
+	</div>
+
+	<h2>Table Form</h2>
+	<div>
+		<form>
+			<table>
+				<tr>
+					<td>
+						<label>UserName</label>
+					</td>
+					<td>
+						<input type="text">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Password</label>
+					</td>
+					<td>
+						<input type="password">
+					</td>
+
+				</tr>
+				<td>
+					<input type="submit">
+				</td>
+			</table>
+			
+		</form>
+	</div>
+
+	<!--Select and Option-->
+	<div>
+		<form>
+			<label>Select a Language</label>
+			<select>
+			<option>HTML</option>
+			<option>CSS</option>
+			<option>Javascript</option>
+			<option>Bootstrap</option>
+			<option>Jquery</option>
+			<option>AJAX</option>
+			<option>Angular Js</option>
+		</select>
+		</form>
+	</div>
+
+	<!--text area-->
+	<div>
+		<form>
+			<label>Enter Your Message</label>
+			<textarea rows="5" cols="20"></textarea>
+		</form>
+	</div>
+
+	<!-- Data List-->
+	<div>
+		<form>
+			<label>Select a Language</label>
+			<input list="tecnologies" name="tech">
+			<datalist id="tecnologies">
+				<option value="HTML">
+			    <option value="CSS">
+			    <option value="Javascript">
+			    <option value="Bootstrap">
+			    <option value="Jquery">
+			    <option value="AJAX">
+			    <option value="Angular Js"></option>
+
+			</datalist> 
+			<input type="submit" value="Submit">  
+		</form>
+	</div>
+
+</body>
+</html>
